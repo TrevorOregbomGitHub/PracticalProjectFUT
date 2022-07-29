@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style> 
+    body {
+        background-image: url ("cover-fifa-22-generica-ufficiale.jpg");
+    }
+    </style>
+<body>
+    <h1>Fifa Ultimate Team Player</h1>
+    <main class="container">
+        <div class="row">
+            <section class="col-4">
+                <form id="footballerForm">
+                    <label class="form-label" for="footballerName">Name:</label>
+                    <input class="form-control" type="text" name="footballerName" id="footballerName">
+
+                    <label class="form-label" for="footballerPosition">Position:</label>
+                    <input class="form-control" type="text" position="footballerPosition" id="footballerPosition">
+
+                    <label class="form-label" for="footballerCardType">Card Type:</label>
+                    <input class="form-control" type="text" card type="footballerCardType" id="footballerCardType">
+                    
+                    <label class="form-label" for="footballerRating">Rating:</label>
+                    <input class="form-control" type="number" rating="footballerRating" id="footballerRating">
+                    
+                    <div class="mt-3">
+
+                    </div>
+                    <button class="btn btn-danger" type="reset">Reset</button>
+                    <button class="btn btn-primary">Submit</button>
+                </form>
+            </section>
+            <section class="col">
+                <div id="output" class="row row-cols-4 g-3"></div>
+            </section>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
